@@ -28,6 +28,8 @@ function show_help() {
     echo "  status    - 显示项目状态"
     echo "  check     - 检查环境配置"
     echo "  github    - 检查GitHub认证状态"
+    echo "  git       - Git状态和快捷操作"
+    echo "  git       - Git状态和快捷操作"
     echo "  help      - 显示此帮助信息"
     echo ""
 }
@@ -196,6 +198,45 @@ function check_github() {
     fi
 }
 
+function git_status() {
+    echo -e "${BLUE}=== Git 状态管理 ===${NC}"
+    
+    cd "$PROJECT_DIR"
+    
+    # Check if git repository
+    if ! git rev-parse --git-dir >/dev/null 2>&1; then
+        echo -e "${RED}✗ 当前目录不是 Git 仓库${NC}"
+        return 1
+    fi
+    
+    # Show basic git information
+    echo -e "${YELLOW}当前分支:${NC} $(git branch --show-current)"
+    echo -e "${YELLOW}远程仓库:${NC}"
+    git remote -v
+    echo ""
+    
+    # Show git status
+    echo -e "${YELLOW}工作区状态:${NC}"
+    git status --short
+    
+    if [ -z "$(git status --porcelain)" ]; then
+        echo -e "${GREEN}✓ 工作区干净，没有未提交的更改${NC}"
+    else
+        echo -e "${YELLOW}! 有未提交的更改${NC}"
+    fi
+    
+    echo ""
+    echo -e "${YELLOW}最近的提交:${NC}"
+    git log --oneline -5
+    
+    echo ""
+    echo -e "${BLUE}快捷操作:${NC}"
+    echo "  git add .           # 添加所有更改"
+    echo "  git commit -m 'msg' # 提交更改"
+    echo "  git push            # 推送到远程仓库"
+    echo "  git pull            # 拉取远程更改"
+}
+
 # Main script logic
 case "$1" in
     "serve")
@@ -215,6 +256,12 @@ case "$1" in
         ;;
     "github")
         check_github
+        ;;
+    "git")
+        git_status
+        ;;
+    "git")
+        git_status
         ;;
     "help"|"")
         show_help
