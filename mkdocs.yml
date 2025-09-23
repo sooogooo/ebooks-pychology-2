@@ -1,7 +1,7 @@
 site_name: 医美消费心理学
 site_description: 深度解析医美消费背后的心理机制与决策过程
-site_author: Your Name
-site_url: https://your-domain.com
+site_author: sooogooo
+site_url: https://github.com/sooogooo/ebooks-pychology-2
 
 theme:
   name: material
@@ -29,8 +29,6 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
-    - content.action.edit
-    - content.action.view
   font:
     text: Noto Sans SC
     code: Roboto Mono
@@ -79,15 +77,12 @@ nav:
   - 未来展望:
     - 技术革新: 12-future-trends.md
     - 结语: 13-conclusion.md
-  - 附录:
-    - 写作计划: writing_plan.md
-    - 完成总结: writing_plan_final.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username
+      link: https://github.com/sooogooo/ebooks-pychology-2
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/your-username
+      link: https://twitter.com/sooogooo
 
-copyright: Copyright &copy; 2024 Your Name. All rights reserved.
+copyright: Copyright &copy; 2024 sooogooo. All rights reserved.

@@ -37,7 +37,6 @@
 点击左侧导航栏开始您的阅读之旅，或者：
 
 [开始阅读引言](00-introduction.md){ .md-button .md-button--primary }
-[查看写作计划](writing_plan.md){ .md-button }
 
 ---
 
