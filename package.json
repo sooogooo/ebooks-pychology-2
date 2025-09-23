@@ -1,0 +1,26 @@
+{
+  "name": "medical-aesthetics-consumer-psychology",
+  "version": "1.0.0",
+  "description": "深度解析医美消费背后的心理机制与决策过程",
+  "scripts": {
+    "dev": "python serve.py",
+    "build": "mkdocs build",
+    "serve": "mkdocs serve",
+    "deploy": "mkdocs gh-deploy --force",
+    "clean": "rm -rf site/",
+    "install": "pip install -r requirements.txt"
+  },
+  "keywords": [
+    "psychology",
+    "medical-aesthetics",
+    "documentation",
+    "mkdocs",
+    "material"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/psycho-2-codebuddy.git"
+  }
+}

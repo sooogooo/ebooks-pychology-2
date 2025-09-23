@@ -1,0 +1,171 @@
+site_name: 医美消费心理学
+site_description: 一部深入探讨医美消费心理机制的专业著作
+site_author: 作者姓名
+site_url: https://your-domain.com
+
+# Repository
+repo_name: medical-aesthetics-psychology
+repo_url: https://github.com/your-username/medical-aesthetics-psychology
+
+# Copyright
+copyright: Copyright &copy; 2024 医美消费心理学
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - toc.follow
+    - toc.integrate
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+# Plugins
+plugins:
+  - search:
+      lang: 
+        - zh
+        - en
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: 目录
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: your-username
+      repo: medical-aesthetics-psychology
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - 首页: index.md
+  - 关于本书:
+    - 写作计划: writing_plan.md
+    - 完成总结: book_completion_summary.md
+  - 正文内容:
+    - 引言: 00-introduction.md
+    - 第一部分 理论基础:
+      - 第1章 美学哲学基础: 01-beauty-philosophy.md
+      - 第2章 科学思维应用: 02-scientific-thinking.md
+      - 第3章 美的测量: 03-measuring-beauty.md
+      - 第4章 文化建构: 04-cultural-construction.md
+    - 第二部分 心理机制:
+      - 第5章 数字镜像: 05-digital-mirror.md
+      - 第6章 人格滤镜: 06-personality-filters.md
+      - 第7章 身体意象: 07-body-image.md
+      - 第8章 亲密关系: 08-intimate-relationships.md
+    - 第三部分 决策与社会:
+      - 第9章 认知陷阱: 09-cognitive-biases.md
+      - 第10章 群体力量: 10-social-psychology.md
+      - 第11章 伦理边界: 11-ethics-boundaries.md
+    - 第四部分 未来展望:
+      - 第12章 未来趋势: 12-future-trends.md
+      - 第13章 结语: 13-conclusion.md
+  - 附录:
+    - 快速开始: quick_start.md
+    - 设置指南: SETUP.md
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/your-username
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:your-email@example.com
+  
+  generator: false
+  
+  # Version selector
+  version:
+    provider: mike
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

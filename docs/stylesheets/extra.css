@@ -1,0 +1,96 @@
+/* Custom styles for the medical aesthetics psychology book */
+
+/* Improve Chinese font rendering */
+.md-typeset {
+  font-family: "Noto Sans SC", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+}
+
+/* Custom colors for different sections */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 600;
+}
+
+/* Enhance code blocks */
+.md-typeset pre {
+  border-radius: 8px;
+}
+
+/* Custom admonition styles */
+.md-typeset .admonition.case-study {
+  border-left-color: #ff9800;
+}
+
+.md-typeset .admonition.case-study > .admonition-title {
+  background-color: rgba(255, 152, 0, 0.1);
+}
+
+.md-typeset .admonition.case-study > .admonition-title::before {
+  background-color: #ff9800;
+  mask-image: var(--md-admonition-icon--example);
+}
+
+/* Improve table styling */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Custom button styles */
+.md-button {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.md-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Improve blockquote styling */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  background-color: rgba(var(--md-primary-fg-color--rgb), 0.05);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Chapter navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--md-code-bg-color);
+  border-radius: 8px;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  transition: all 0.2s ease;
+}
+
+.chapter-nav a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+  .md-typeset {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  .chapter-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
