@@ -1,161 +1,106 @@
 # 医美消费心理学
 
-深度解析医美消费背后的心理机制与决策过程，使用 MkDocs 和 Material 主题构建的专业网站。
+深度解析医美消费背后的心理机制与决策过程的学术电子书。
 
-## 🚀 Quick Start
+## 📖 关于本书
 
-### Prerequisites
+本书从心理学、哲学、社会学等多学科视角，系统性地探讨医美消费的心理机制，包括：
 
-- Python 3.7+
-- pip
+- **理论基础**：美学哲学、科学思维与身体智慧
+- **社会镜像**：文化建构、数字自我与算法审美
+- **内在世界**：人格特质、身体意象与心理健康
+- **决策机制**：认知偏差、社会心理与理性选择
+- **伦理思考**：个人自由与社会责任的平衡
+- **未来展望**：技术革新对美学观念的影响
 
-### Installation
+## 📚 章节结构
 
-1. Clone this repository:
+### 引言
+- [引言：美的追求与理性的思考](00-introduction.md)
+
+### 第一部分：理论基础
+- [第1章：美学哲学基础](01-beauty-philosophy.md)
+- [第2章：科学思维应用](02-scientific-thinking.md)
+- [第3章：美的测量](03-measuring-beauty.md)
+- [第4章：文化建构](04-cultural-construction.md)
+
+### 第二部分：心理机制
+- [第5章：数字镜像](05-digital-mirror.md)
+- [第6章：人格滤镜](06-personality-filters.md)
+- [第7章：身体意象](07-body-image.md)
+- [第8章：亲密关系](08-intimate-relationships.md)
+
+### 第三部分：决策与社会
+- [第9章：认知陷阱](09-cognitive-biases.md)
+- [第10章：群体力量](10-social-psychology.md)
+- [第11章：伦理边界](11-ethics-boundaries.md)
+
+### 第四部分：未来展望
+- [第12章：技术革新](12-future-trends.md)
+- [第13章：结语](13-conclusion.md)
+
+## 🎯 目标读者
+
+- **医美消费者**：希望做出理性决策的求美者
+- **行业从业者**：医生、咨询师、心理工作者
+- **学术研究者**：心理学、社会学、美学研究人员
+- **政策制定者**：行业监管和政策制定相关人员
+
+## 📊 内容特色
+
+- **跨学科视角**：整合心理学、哲学、社会学等多领域理论
+- **本土化分析**：深度结合中国文化背景和社会现象
+- **实证研究**：基于大量学术研究和真实案例
+- **实用指导**：提供具体的评估工具和决策框架
+- **前瞻思考**：探讨技术发展对未来美学观念的影响
+
+## 🌐 在线阅读
+
+访问 [在线版本](https://your-domain.com) 获得更好的阅读体验，支持：
+
+- 响应式设计，适配各种设备
+- 深色/浅色主题切换
+- 全文搜索功能
+- 中文优化排版
+- 章节导航和进度跟踪
+
+## 🛠️ 技术实现
+
+本电子书使用 [MkDocs](https://www.mkdocs.org/) 和 [Material 主题](https://squidfunk.github.io/mkdocs-material/) 构建，具有：
+
+- 静态网站生成
+- 优秀的中文支持
+- 现代化的用户界面
+- 移动端友好设计
+
+### 本地运行
+
 ```bash
-git clone <your-repo-url>
-cd psycho-2-codebuddy
-```
-
-2. Install dependencies:
-```bash
+# 安装依赖
 pip install -r requirements.txt
-```
 
-3. Serve the documentation locally:
-```bash
+# 启动开发服务器
 mkdocs serve
-```
 
-4. Open your browser and navigate to `http://127.0.0.1:8000`
-
-## 📖 About the Book
-
-This book explores the psychological aspects of medical aesthetics, providing:
-
-- **Theoretical Foundations**: Philosophical and scientific frameworks
-- **Psychological Mechanisms**: Deep dive into decision-making psychology
-- **Social Impact**: Analysis of cultural and social influences
-- **Future Trends**: Technology and ethical considerations
-
-## 🏗️ Building for Production
-
-To build the static site for deployment:
-
-```bash
+# 构建静态网站
 mkdocs build
 ```
 
-The built site will be in the `site/` directory.
+## 📄 版权说明
 
-## 📁 Project Structure
+本作品采用知识共享许可协议，详见 LICENSE 文件。
 
-```
-.
-├── docs/                   # Documentation source files
-│   ├── index.md           # Homepage
-│   ├── 00-introduction.md # Introduction
-│   ├── 01-beauty-philosophy.md
-│   ├── ...                # Chapter files
-│   └── stylesheets/       # Custom CSS
-├── mkdocs.yml             # MkDocs configuration
-├── requirements.txt       # Python dependencies
-└── README.md             # This file
-```
+## 🤝 贡献
 
-## 🎨 Customization
+欢迎提出建议和改进意见，请通过 Issues 或 Pull Requests 参与贡献。
 
-### Theme Configuration
+## 📞 联系方式
 
-The site uses Material for MkDocs with custom styling. Key features:
+如有疑问或合作意向，请通过以下方式联系：
 
-- **Dark/Light Mode Toggle**: Automatic theme switching
-- **Chinese Font Support**: Optimized for Chinese content
-- **Navigation**: Tabbed navigation with sections
-- **Search**: Full-text search in Chinese
-- **Mobile Responsive**: Optimized for all devices
-
-### Custom Styling
-
-Custom CSS is located in `docs/stylesheets/extra.css` and includes:
-
-- Enhanced Chinese typography
-- Custom admonition styles
-- Improved table and code block styling
-- Responsive design improvements
-
-## 📝 Content Management
-
-### Adding New Chapters
-
-1. Create a new markdown file in the `docs/` directory
-2. Add the file to the `nav` section in `mkdocs.yml`
-3. Use consistent formatting and structure
-
-### Markdown Extensions
-
-The site supports advanced markdown features:
-
-- **Admonitions**: `!!! note`, `!!! warning`, etc.
-- **Code Highlighting**: Syntax highlighting for multiple languages
-- **Tables**: Enhanced table styling
-- **Footnotes**: Academic-style footnotes
-- **Emoji**: Material Design emoji support
-
-## 🚀 Deployment Options
-
-### GitHub Pages
-
-1. Enable GitHub Pages in repository settings
-2. Use GitHub Actions for automatic deployment:
-
-```yaml
-name: Deploy MkDocs
-on:
-  push:
-    branches: [ main ]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
-    - run: pip install -r requirements.txt
-    - run: mkdocs gh-deploy --force
-```
-
-### Netlify
-
-1. Connect your repository to Netlify
-2. Set build command: `mkdocs build`
-3. Set publish directory: `site`
-
-### Vercel
-
-1. Import your repository to Vercel
-2. Set build command: `mkdocs build`
-3. Set output directory: `site`
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test locally with `mkdocs serve`
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- [MkDocs](https://www.mkdocs.org/) - Static site generator
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Beautiful theme
-- All contributors and readers who made this project possible
+- GitHub: [@sooogooo](https://github.com/sooogooo)
+- Email: sooogooo@gmail.com
 
 ---
 
-For questions or support, please open an issue in the repository.
+**《医美消费心理学》** - 深度理解美的追求，理性面对选择
